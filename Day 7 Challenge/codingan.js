@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
                 res.writeHead(404, { 'Content-Type': 'text/html' });
                 res.write('404 Not Found');
                 return res.end();
-                console.log(http)
+                
             }
             res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write(data);
@@ -78,3 +78,4 @@ const server = http.createServer((req, res) => {
         });
     }
 }).listen(3000);
+console.log(server)
